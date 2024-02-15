@@ -30,4 +30,9 @@
   ```
 
 ## API Docs
-- [API Documentations generator](https://apiato.io/docs/additional-features/documentation).
+- Run `npm install`
+- Run `php artisan apiato:apidoc`
+- Access API docs `/docs` for public API & `/docs/private` for private API.
+
+## Itegration Testing
+- Run spesific test with `php artisan test {path test file}` example: `php artisan test app/Containers/NewsSection/News/UI/API/Tests/Functional/CreateNewsTest.php`

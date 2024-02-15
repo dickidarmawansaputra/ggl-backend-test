@@ -2,6 +2,7 @@
 
 namespace App\Containers\NewsSection\Category\Data\Factories;
 
+use Illuminate\Support\Str;
 use App\Containers\NewsSection\Category\Models\Category;
 use App\Ship\Parents\Factories\Factory as ParentFactory;
 
@@ -17,8 +18,10 @@ class CategoryFactory extends ParentFactory
 
     public function definition(): array
     {
+        $category = $this->faker->name();
         return [
-            //
+            'name' => $category,
+            'slug' => Str::slug($category),
         ];
     }
 }
