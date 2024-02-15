@@ -5895,3 +5895,246 @@ Did you mean one of these?
 #41 C:\\laragon\\www\\ggl-backend-test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #42 {main}
 "} 
+[2024-02-15 15:38:55] local.ERROR: Command "apiato:" is ambiguous.
+Did you mean one of these?
+    apiato:list:actions             List all Actions in the Application.
+    apiato:list:tasks               List all Tasks in the Application.
+    apiato:seed-deploy              Seed data for initial deployment.
+    apiato:seed-test                Seed testing data.
+    apiato:create:admin             Create a new User with the ADMIN role
+    apiato:apidoc                   Generate API Documentations with (API-Doc-JS)
+    apiato:generate:action          Create a Action file for a Container
+    apiato:generate:configuration   Create a Configuration file for a Container
+    apiato:generate:container       Create a Container for apiato from scratch
+    apiato:generate:container:api   Create a Container for apiato from scratch (API Part)
+    apiato:generate:container:web   Create a Container for apiato from scratch (WEB Part)
+    apiato:generate:controller      Create a controller for a container
+    apiato:generate:event           Create a new Event class and its corresponding Listener
+    apiato:generate:listener        Create a new Event Listener class
+    apiato:generate:exception       Create a new Exception class
+    apiato:generate:job             Create a new Job class
+    apiato:generate:factory         Create a new Model Factory class for a given Model
+    apiato:generate:mail            Create a new Mail class
+    apiato:generate:middleware      Create a new Middleware class
+    apiato:generate:migration       Create an "empty" migration file for a Container
+    apiato:generate:model           Create a new Model class
+    apiato:generate:notification    Create a new Notification class
+    apiato:generate:policy          Create a new Policy class
+    apiato:generate:readme          Create a README file for a Container
+    apiato:generate:repository      Create a new Repository class
+    apiato:generate:request         Create a new Request class
+    apiato:generate:route           Create a new Route class
+    apiato:generate:seeder          Create a new Seeder class
+    apiato:generate:provider        Create a Service Provider for a Container
+    apiato:generate:subaction       Create a new SubAction class
+    apiato:generate:test:functional Create a Functional Test file.
+    apiato:generate:test:testcase   Create the TestCase file.
+    apiato:generate:test:unit       Create a Unit Test file.
+    apiato:generate:task            Create a Task file for a Container
+    apiato:generate:transformer     Create a new Transformer class for a given Model
+    apiato:generate:value           Create a new Value class. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"apiato:\" is ambiguous.
+Did you mean one of these?
+    apiato:list:actions             List all Actions in the Application.
+    apiato:list:tasks               List all Tasks in the Application.
+    apiato:seed-deploy              Seed data for initial deployment.
+    apiato:seed-test                Seed testing data.
+    apiato:create:admin             Create a new User with the ADMIN role
+    apiato:apidoc                   Generate API Documentations with (API-Doc-JS)
+    apiato:generate:action          Create a Action file for a Container
+    apiato:generate:configuration   Create a Configuration file for a Container
+    apiato:generate:container       Create a Container for apiato from scratch
+    apiato:generate:container:api   Create a Container for apiato from scratch (API Part)
+    apiato:generate:container:web   Create a Container for apiato from scratch (WEB Part)
+    apiato:generate:controller      Create a controller for a container
+    apiato:generate:event           Create a new Event class and its corresponding Listener
+    apiato:generate:listener        Create a new Event Listener class
+    apiato:generate:exception       Create a new Exception class
+    apiato:generate:job             Create a new Job class
+    apiato:generate:factory         Create a new Model Factory class for a given Model
+    apiato:generate:mail            Create a new Mail class
+    apiato:generate:middleware      Create a new Middleware class
+    apiato:generate:migration       Create an \"empty\" migration file for a Container
+    apiato:generate:model           Create a new Model class
+    apiato:generate:notification    Create a new Notification class
+    apiato:generate:policy          Create a new Policy class
+    apiato:generate:readme          Create a README file for a Container
+    apiato:generate:repository      Create a new Repository class
+    apiato:generate:request         Create a new Request class
+    apiato:generate:route           Create a new Route class
+    apiato:generate:seeder          Create a new Seeder class
+    apiato:generate:provider        Create a Service Provider for a Container
+    apiato:generate:subaction       Create a new SubAction class
+    apiato:generate:test:functional Create a Functional Test file.
+    apiato:generate:test:testcase   Create the TestCase file.
+    apiato:generate:test:unit       Create a Unit Test file.
+    apiato:generate:task            Create a Task file for a Container
+    apiato:generate:transformer     Create a new Transformer class for a given Model
+    apiato:generate:value           Create a new Value class. at C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php:778)
+[stacktrace]
+#0 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(266): Symfony\\Component\\Console\\Application->find('apiato:')
+#1 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\laragon\\www\\ggl-backend-test\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 {main}
+"} 
+[2024-02-15 15:42:55] local.ERROR: Failed to create Resource. {"exception":"[object] (App\\Ship\\Exceptions\\CreateResourceFailedException(code: 417): Failed to create Resource. at C:\\laragon\\www\\ggl-backend-test\\app\\Containers\\AppSection\\Authorization\\Tasks\\CreatePermissionTask.php:30)
+[stacktrace]
+#0 C:\\laragon\\www\\ggl-backend-test\\app\\Containers\\AppSection\\Authorization\\Data\\Seeders\\AuthorizationPermissionsSeeder_1.php(18): App\\Containers\\AppSection\\Authorization\\Tasks\\CreatePermissionTask->run('manage-roles', 'Create, Update,...', NULL, 'web')
+#1 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Containers\\AppSection\\Authorization\\Data\\Seeders\\AuthorizationPermissionsSeeder_1->run(Object(App\\Containers\\AppSection\\Authorization\\Tasks\\CreatePermissionTask))
+#2 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#7 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#8 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(61): Illuminate\\Database\\Seeder->__invoke(Array)
+#9 C:\\laragon\\www\\ggl-backend-test\\vendor\\apiato\\core\\src\\Loaders\\SeederLoaderTrait.php(99): Illuminate\\Database\\Seeder->call('App\\\\Containers\\\\...')
+#10 C:\\laragon\\www\\ggl-backend-test\\vendor\\apiato\\core\\src\\Loaders\\SeederLoaderTrait.php(38): Database\\Seeders\\DatabaseSeeder->loadSeeders(Object(Illuminate\\Support\\Collection))
+#11 C:\\laragon\\www\\ggl-backend-test\\vendor\\apiato\\core\\src\\Loaders\\SeederLoaderTrait.php(20): Database\\Seeders\\DatabaseSeeder->loadSeedersFromContainers()
+#12 C:\\laragon\\www\\ggl-backend-test\\database\\seeders\\DatabaseSeeder.php(15): Database\\Seeders\\DatabaseSeeder->runLoadingSeeders()
+#13 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\DatabaseSeeder->run()
+#14 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#15 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#16 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#19 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#20 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(70): Illuminate\\Database\\Seeder->__invoke()
+#21 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#22 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(71): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#23 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#24 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#25 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#26 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#29 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\laragon\\www\\ggl-backend-test\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2024-02-15 15:44:04] local.ERROR: Target class [Database\Seeders\NewsSeeder] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Database\\Seeders\\NewsSeeder] does not exist. at C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Database\\\\Seeder...')
+#1 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(957): Illuminate\\Container\\Container->resolve('Database\\\\Seeder...', Array, true)
+#2 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Database\\\\Seeder...', Array)
+#3 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(942): Illuminate\\Container\\Container->make('Database\\\\Seeder...', Array)
+#4 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(98): Illuminate\\Foundation\\Application->make('Database\\\\Seeder...')
+#5 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(70): Illuminate\\Database\\Console\\Seeds\\SeedCommand->getSeeder()
+#6 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#7 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(71): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#8 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#9 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#14 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\laragon\\www\\ggl-backend-test\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Database\\Seeders\\NewsSeeder\" does not exist at C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:912)
+[stacktrace]
+#0 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('Database\\\\Seeder...')
+#1 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Database\\\\Seeder...')
+#2 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(957): Illuminate\\Container\\Container->resolve('Database\\\\Seeder...', Array, true)
+#3 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Database\\\\Seeder...', Array)
+#4 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(942): Illuminate\\Container\\Container->make('Database\\\\Seeder...', Array)
+#5 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(98): Illuminate\\Foundation\\Application->make('Database\\\\Seeder...')
+#6 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(70): Illuminate\\Database\\Console\\Seeds\\SeedCommand->getSeeder()
+#7 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#8 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(71): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#9 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#10 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#15 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#17 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 C:\\laragon\\www\\ggl-backend-test\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+"} 
+[2024-02-15 15:45:18] local.ERROR: The "--seeder" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--seeder\" option does not exist. at C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\ArgvInput.php:223)
+[stacktrace]
+#0 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\ArgvInput.php(150): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('seeder', 'NewsSeeder')
+#1 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--seeder=NewsSe...')
+#2 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--seeder=NewsSe...', true)
+#3 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Command\\Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\laragon\\www\\ggl-backend-test\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2024-02-15 15:45:50] local.ERROR: The "--seeder" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--seeder\" option does not exist. at C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\ArgvInput.php:223)
+[stacktrace]
+#0 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\ArgvInput.php(150): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('seeder', 'NewsSeeder')
+#1 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--seeder=NewsSe...')
+#2 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--seeder=NewsSe...', true)
+#3 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Input\\Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Command\\Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\laragon\\www\\ggl-backend-test\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2024-02-15 15:46:12] local.ERROR: Failed to create Resource. {"exception":"[object] (App\\Ship\\Exceptions\\CreateResourceFailedException(code: 417): Failed to create Resource. at C:\\laragon\\www\\ggl-backend-test\\app\\Containers\\AppSection\\Authorization\\Tasks\\CreatePermissionTask.php:30)
+[stacktrace]
+#0 C:\\laragon\\www\\ggl-backend-test\\app\\Containers\\AppSection\\Authorization\\Data\\Seeders\\AuthorizationPermissionsSeeder_1.php(18): App\\Containers\\AppSection\\Authorization\\Tasks\\CreatePermissionTask->run('manage-roles', 'Create, Update,...', NULL, 'web')
+#1 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Containers\\AppSection\\Authorization\\Data\\Seeders\\AuthorizationPermissionsSeeder_1->run(Object(App\\Containers\\AppSection\\Authorization\\Tasks\\CreatePermissionTask))
+#2 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#7 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#8 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(61): Illuminate\\Database\\Seeder->__invoke(Array)
+#9 C:\\laragon\\www\\ggl-backend-test\\vendor\\apiato\\core\\src\\Loaders\\SeederLoaderTrait.php(99): Illuminate\\Database\\Seeder->call('App\\\\Containers\\\\...')
+#10 C:\\laragon\\www\\ggl-backend-test\\vendor\\apiato\\core\\src\\Loaders\\SeederLoaderTrait.php(38): Database\\Seeders\\DatabaseSeeder->loadSeeders(Object(Illuminate\\Support\\Collection))
+#11 C:\\laragon\\www\\ggl-backend-test\\vendor\\apiato\\core\\src\\Loaders\\SeederLoaderTrait.php(20): Database\\Seeders\\DatabaseSeeder->loadSeedersFromContainers()
+#12 C:\\laragon\\www\\ggl-backend-test\\database\\seeders\\DatabaseSeeder.php(15): Database\\Seeders\\DatabaseSeeder->runLoadingSeeders()
+#13 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\DatabaseSeeder->run()
+#14 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#15 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#16 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#19 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#20 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(70): Illuminate\\Database\\Seeder->__invoke()
+#21 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#22 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(71): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#23 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#24 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#25 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#26 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#29 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\laragon\\www\\ggl-backend-test\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\laragon\\www\\ggl-backend-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\laragon\\www\\ggl-backend-test\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 

@@ -161,10 +161,15 @@ namespace App\Containers\NewsSection\News\Models{
  * @property string $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null $deleted_at
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property-read \App\Containers\AppSection\User\Models\User|null $author
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Containers\NewsSection\Category\Models\Category> $categories
+ * @property-read int|null $categories_count
+ * @property-read \App\Containers\NewsSection\News\Models\NewsViews|null $views
  * @method static \App\Containers\NewsSection\News\Data\Factories\NewsFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|News newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|News newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|News onlyTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder|News query()
  * @method static \Illuminate\Database\Eloquent\Builder|News whereContent($value)
  * @method static \Illuminate\Database\Eloquent\Builder|News whereCreatedAt($value)
@@ -177,7 +182,24 @@ namespace App\Containers\NewsSection\News\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|News whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|News whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|News whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News withTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|News withoutTrashed()
  */
 	class News extends \Eloquent {}
+}
+
+namespace App\Containers\NewsSection\News\Models{
+/**
+ * App\Containers\NewsSection\News\Models\NewsViews
+ *
+ * @property int $news_id
+ * @property int $views
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsViews newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsViews newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsViews query()
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsViews whereNewsId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsViews whereViews($value)
+ */
+	class NewsViews extends \Eloquent {}
 }
 
