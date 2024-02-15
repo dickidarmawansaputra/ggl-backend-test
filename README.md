@@ -8,7 +8,7 @@
 - Run `php artisan migrate`
 - Run `php artisan db:seed`
 - Default user credentials: `email: admin@admin.com password: admin`
-- Run `php artisan passport install` & example output:
+- Run `php artisan passport:install` & example output:
   
   ```
   Encryption keys generated successfully.
