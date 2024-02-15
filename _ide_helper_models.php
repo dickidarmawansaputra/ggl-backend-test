@@ -120,3 +120,64 @@ namespace App\Containers\AppSection\User\Models{
 	class User extends \Eloquent implements \App\Ship\Contracts\MustVerifyEmail, \Illuminate\Contracts\Auth\MustVerifyEmail {}
 }
 
+namespace App\Containers\NewsSection\Category\Models{
+/**
+ * App\Containers\NewsSection\Category\Models\Category
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $slug
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @method static \App\Containers\NewsSection\Category\Data\Factories\CategoryFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder|Category newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Category newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Category onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Category query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Category whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Category whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Category whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Category whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Category whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Category whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Category withTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Category withoutTrashed()
+ */
+	class Category extends \Eloquent {}
+}
+
+namespace App\Containers\NewsSection\News\Models{
+/**
+ * App\Containers\NewsSection\News\Models\News
+ *
+ * @property int $id
+ * @property string $title
+ * @property string $slug
+ * @property int $user_id
+ * @property string $thumbnail
+ * @property string $content
+ * @property string|null $publish_at
+ * @property string $status
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $deleted_at
+ * @method static \App\Containers\NewsSection\News\Data\Factories\NewsFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder|News newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|News newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|News query()
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereContent($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News wherePublishAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereThumbnail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereUserId($value)
+ */
+	class News extends \Eloquent {}
+}
+
